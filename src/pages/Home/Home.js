@@ -6,7 +6,6 @@ import Banner from '../../component/Banner/Banner'
 function Home() {
   return (
     <>
-      <Header />
       <Banner />
     </>
   );

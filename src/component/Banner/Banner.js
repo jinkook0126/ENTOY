@@ -8,7 +8,7 @@ import FormControl from '@material-ui/core/FormControl';
 function Banner() {
   return (
     <div className={styles.banner__wrap}>
-        <div className={styles.box__wrap}>
+        {/* <div className={styles.box__wrap}>
             <div className={styles.input__wrap}>
                 <FormControl variant="outlined" className={styles.select__box}>
                     <InputLabel id="demo-simple-select-outlined-label">구분</InputLabel>
@@ -28,7 +28,7 @@ function Banner() {
             <a href="#" className={styles.searchBtn}>
                 <i class="fas fa-search"></i>
             </a>
-        </div>
+        </div> */}
     </div>
   );
 }

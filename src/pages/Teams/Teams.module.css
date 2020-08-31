@@ -1,0 +1,22 @@
+.teams_list_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.register_btn_wrap{
+    margin-top: 20px;
+}
+.register_btn_wrap button{
+    padding:12px 9px;
+    border:none;
+    background-color: aquamarine;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.register_btn_wrap button:focus{
+    outline: none;
+}

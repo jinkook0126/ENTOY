@@ -1,13 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Home from './pages/Home/Home'
+import Routes from './component/Route'
+import { createStore } from 'redux';
+import rootReducer from './reducers'
+import { Provider } from 'react-redux';
+
 
 function App() {
+  let store = createStore(rootReducer);
   return (
-    <div>
-      <Home />
-    </div>
+    <Provider store={store}>
+      <Routes />
+    </Provider>
   );
 }
 
