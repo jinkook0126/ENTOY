@@ -51,7 +51,7 @@ export default function LoginModal(props) {
     >
       <Fade in={modal}>
         <div className={classes.paper}>
-          {view === "login" ? <Login change={changeView}/>:<SignUp />}
+          {view === "login" ? <Login change={changeView}/>:<SignUp change={changeView}/>}
         </div>
       </Fade>
     </Modal>

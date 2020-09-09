@@ -26,11 +26,11 @@ export default (props)=>{
     return (
         <>
             <h2 id="transition-modal-title">간편가입 / 로그인</h2>
-            <input type="text" value={id} onChange={(e)=>setId(e.target.value)}/>
-            <input type="password" value={pw} onChange={(e)=>setPw(e.target.value)}/>
+            <input type="text" value={id} onChange={(e)=>setId(e.target.value)} placeholder="이메일"/>
+            <input type="password" value={pw} onChange={(e)=>setPw(e.target.value)} placeholder="비밀번호"/>
             <button onClick={onLoginModalClose}>닫기</button>
-            <button onClick={onLoginRequest}>로그인 하기</button>
-            <button onClick={navigateSignUp}>회원가입 하기</button>
+            <button onClick={onLoginRequest}>로그인</button>
+            <button onClick={navigateSignUp}>회원가입</button>
         </>
     );
 }
