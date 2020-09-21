@@ -1,9 +1,7 @@
 .teams_list_wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+    background-color: #cccccc;
+    text-align: center;
+    padding:15px 0 15px;
 }
 .register_btn_wrap{
     margin-top: 20px;

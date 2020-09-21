@@ -28,9 +28,9 @@ export default (props)=>{
     };
 
     const signUpRequest = async() =>{
-        const {success} = await Axios.post("/api/auth/signUp",{email:email,name:name,password:password});
+        const {success,msg} = await Axios.post("/users/signUp",{email:email,name:name,password:password});
         if(!success) return;
-        alert("회원가입 성공!!");
+        alert(msg);
         onLoginModalClose();
     }
 

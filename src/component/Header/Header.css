@@ -10,6 +10,7 @@ a{
     background-color: rgba(0, 0, 0, 0.4);
     position:fixed;
     width:calc(100% - 20px);
+    z-index: 2;
 }
 .navbar__logo {
     color: #ab0020;

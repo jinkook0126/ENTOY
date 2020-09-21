@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import Axios from '../../../modules/Axios';
 import { useDispatch } from 'react-redux'
 import { loginCloseModal } from '../../../reducers/modal';
+import { loginSuccess } from '../../../reducers/auth';
 
 export default (props)=>{
     const dispatch = useDispatch();
@@ -17,8 +18,9 @@ export default (props)=>{
     };
 
     const onLoginRequest = async() =>{
-        const {success} = await Axios.post('/api/auth/login',{id:id,pw:pw});
+        const {success,name,mail} = await Axios.post('/users/login',{email:id,pw:pw});
         if(!success) return;
+        dispatch(loginSuccess(name, mail));
         alert("로그인 성공!!");
         onLoginModalClose();
     };
